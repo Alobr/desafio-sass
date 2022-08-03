@@ -1,0 +1,450 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif; }
+
+header {
+  position: fixed;
+  z-index: 10; }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.575);
+    padding: 10px; }
+    header nav img {
+      display: none; }
+    header nav h1 {
+      font-size: 25px;
+      text-align: center;
+      color: red; }
+    header nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      list-style-type: none; }
+      header nav ul li {
+        padding: 5px; }
+        header nav ul li a {
+          text-decoration: none;
+          font-weight: 700;
+          font-size: 20px;
+          color: white; }
+
+body {
+  color: white;
+  font-size: 18px;
+  background: black; }
+
+.main-text {
+  background: linear-gradient(rgba(105, 89, 89, 0.495), rgba(109, 96, 96, 0.506)), url(../imagenes/imx.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 65px; }
+  .main-text h2 {
+    font-size: 35px;
+    font-weight: 900;
+    border: 10px solid rgba(0, 0, 0, 0.934);
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 30px; }
+  .main-text p {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0 15px 0 15px; }
+    .main-text p a {
+      text-decoration: none;
+      color: red;
+      font-weight: 900;
+      font-size: 25px; }
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  margin: 15px; }
+  .news-container div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 140px;
+    margin-bottom: 15px;
+    background-color: white; }
+    .news-container div img {
+      width: 40%;
+      height: 140px;
+      object-fit: cover; }
+    .news-container div h3 {
+      margin-right: 5px;
+      margin-left: 5px;
+      color: red; }
+
+.galeria {
+  width: 100%;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 200px;
+  gap: 15px; }
+  .galeria div {
+    margin: 0 15px 15px 15px; }
+    .galeria div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+
+.grid-container {
+  position: relative;
+  grid-column: span 1;
+  grid-row: span 1;
+  transform: rotateX(0deg);
+  transition: 50ms; }
+  .grid-container:hover {
+    transform: perspective(600px) rotateX(2deg);
+    opacity: 1; }
+  .grid-container h3 {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.495);
+    width: 100%;
+    color: white;
+    text-align: center; }
+
+.match-plan-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px 0 15px; }
+
+.july,
+.august,
+.september,
+.november {
+  border: 5px solid gray;
+  margin-bottom: 15px;
+  padding: 5px;
+  text-align: center; }
+
+.july h3,
+.august h3,
+.september h3,
+.november h3 {
+  text-decoration: underline; }
+
+.lower-class-text {
+  font-size: 16px;
+  color: hwb(180 0% 0%);
+  text-align: center; }
+
+.text-grid,
+.img-grid,
+.text-grid-2 {
+  display: none; }
+
+.plantilla-container table {
+  border-collapse: collapse;
+  margin: 15px;
+  text-align: center; }
+
+.plantilla-container table tr,
+.plantilla-container table tr th,
+.plantilla-container table tr td {
+  border: 5px solid #5c5a5a;
+  font-weight: 600; }
+
+.secondary-text {
+  margin: 15px;
+  text-align: center; }
+  .secondary-text h2 {
+    background: red;
+    margin-bottom: 15px; }
+
+.players-loan-info {
+  display: flex;
+  flex-direction: column;
+  margin: 15px; }
+  .players-loan-info div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 5px solid #5c5a5a;
+    padding: 10px;
+    margin-bottom: 15px; }
+    .players-loan-info div h3 {
+      text-decoration: underline;
+      margin-bottom: 10px; }
+
+.main-container {
+  max-width: 1170px;
+  width: 100%; }
+
+.contact-wrapper {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3); }
+
+.contact-wrapper > * {
+  padding: 15px; }
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr; }
+  .contact-form form label {
+    display: block; }
+  .contact-form form p {
+    padding: 15px; }
+  .contact-form form input,
+  .contact-form form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: none;
+    outline: 0;
+    color: white;
+    border-bottom: 1px solid #d63031; }
+  .contact-form form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: none;
+    outline: 0;
+    color: white;
+    border-bottom: 1px solid #d63031;
+    background: #b70e21;
+    text-transform: uppercase; }
+    .contact-form form button:hover, .contact-form form button:focus {
+      background: #d54848;
+      color: white;
+      transition: background-color .5s ease-out;
+      outline: 0;
+      font-size: 35px;
+      font-weight: 700;
+      margin-bottom: 40px;
+      text-align: center; }
+
+.block {
+  grid-column: 1/3; }
+
+.contact-info h3 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center; }
+
+.contact-info ul {
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 10px; }
+
+.contact-info ul li i {
+  margin-right: 5px; }
+
+.contact-info p {
+  text-align: center; }
+
+footer {
+  background-color: red;
+  text-align: center; }
+
+@media screen and (min-width: 665px) {
+  /* ---------- Estilos inicio ---------- */
+  .news-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 150px;
+    gap: 15px; }
+  /* ---------- Estilos Galería ---------- */
+  .galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 200px; }
+  /* ---------- Estilos Plantilla ---------- */
+  .plantilla-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px 0 15px; }
+  .text-grid {
+    display: block;
+    margin-bottom: 10px; }
+    .text-grid h2 {
+      text-align: center;
+      text-decoration: underline;
+      margin-bottom: 10px; }
+  .img-grid {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%; }
+    .img-grid img {
+      width: 100%; }
+  .text-grid-2 {
+    display: block;
+    margin-bottom: 10px; }
+  .text-grid-2 p:first-child {
+    padding-bottom: 50px; }
+  .plantilla-container table {
+    margin: 0%; }
+  .players-loan-info {
+    display: grid;
+    grid-template-areas: "top-l top-r" "bottom-l bottom-r";
+    gap: 15px; }
+  .item-1 {
+    grid-area: top-l; }
+  .item-2 {
+    grid-area: top-r; }
+  .item-3 {
+    grid-area: bottom-l; }
+  .item-4 {
+    grid-area: bottom-r; }
+  .players-loan-info div {
+    padding: 0;
+    margin: 0;
+    justify-content: start; }
+  .plantilla-container {
+    padding-top: 20px; }
+  .plantilla-container table {
+    margin: auto;
+    background-color: black; }
+  /* ---------- Estilos Contacto ---------- */
+  .contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; } }
+
+/* -------------------------- Media Query Desktop --------------------------- */
+@media screen and (min-width: 1400px) {
+  /* ---------- Estilos Generales ---------- */
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    header nav img {
+      display: block;
+      width: 115px;
+      height: 115px; }
+    header nav h1 {
+      font-size: 45px; }
+    header nav ul {
+      display: flex;
+      flex-direction: row; }
+    header nav li a {
+      font-size: 25px;
+      padding: 10px; }
+  .main-text h2 {
+    font-size: 55px; }
+  /* ---------- Estilos Inicio ---------- */
+  .news-container {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-wrap: wrap; }
+    .news-container div {
+      border: 5px solid gray;
+      width: 500px;
+      height: 300px;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      box-shadow: 10px 10px 5px 3px rgba(97, 96, 96, 0.75);
+      -webkit-box-shadow: 10px 10px 5px 3px rgba(97, 96, 96, 0.75);
+      -moz-box-shadow: 10px 10px 5px 3px rgba(97, 96, 96, 0.75); }
+      .news-container div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .news-container div h3 {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        margin: 0;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.495); }
+  /* ---------- Estilos Galería ---------- */
+  .galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 500px; }
+  .grid-container h3 {
+    font-size: 35px; }
+  /* ---------- Estilos Partidos ---------- */
+  .match-plan-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .match-plan-container h2 {
+      align-self: center;
+      background: none; }
+  /* ---------- Estilos Plantilla ---------- */
+  .plantilla-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "text-grid text-grid table-grid" "img-grid text-grid-2 text-grid-2";
+    gap: 15px;
+    justify-content: center;
+    align-items: center; }
+  .text-grid {
+    grid-area: text-grid; }
+  .img-grid {
+    grid-area: img-grid; }
+  .text-grid-2 {
+    height: 100%;
+    padding: 20px;
+    grid-area: text-grid-2; }
+  .table-grid {
+    grid-area: table-grid;
+    align-self: flex-start; }
+  .players-loan-info {
+    display: grid;
+    grid-template-areas: "top-l top-r" "bottom-l bottom-r";
+    gap: 15px; }
+  .item-1 {
+    grid-area: top-l; }
+  .item-2 {
+    grid-area: top-r; }
+  .item-3 {
+    grid-area: bottom-l; }
+  .item-4 {
+    grid-area: bottom-r; }
+  .players-loan-info div {
+    padding: 0;
+    margin: 0;
+    justify-content: start; }
+  /* ---------- Estilos Contacto ---------- */
+  .main-container {
+    margin: auto; }
+  .contact-wrapper {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 250px 450px;
+    grid-template-rows: 500px;
+    grid-template-areas: "left left right"; }
+  .contact-form {
+    font-size: 25px;
+    grid-area: left;
+    height: 100%; }
+  .contact-info {
+    grid-area: right;
+    background-color: #0e0e0e;
+    font-size: 25px;
+    height: 100%; }
+  .contact-info h3,
+  .contact-info ul,
+  .contact-info p {
+    padding: 10px; } }

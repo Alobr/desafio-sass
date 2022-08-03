@@ -1,0 +1,31 @@
+.match-plan-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px 0 15px;
+}
+
+
+.july,
+.august,
+.september,
+.november {
+  border: 5px solid gray;
+  margin-bottom: 15px;
+  padding: 5px;
+  text-align: center;
+}
+
+.july h3,
+.august h3,
+.september h3,
+.november h3 {
+  text-decoration: underline;
+}
+
+
+
+.lower-class-text {
+  font-size: 16px;
+  color: hwb(180 0% 0%);
+  text-align: center;
+}

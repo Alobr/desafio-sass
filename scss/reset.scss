@@ -1,0 +1,5 @@
+* {
+  @include reset-pm();
+  box-sizing: border-box;
+  font-family: $font-qs;
+}

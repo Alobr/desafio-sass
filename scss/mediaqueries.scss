@@ -1,0 +1,348 @@
+@media screen and (min-width:665px) {
+
+  /* ---------- Estilos inicio ---------- */
+
+  .news-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 150px;
+    gap: 15px;
+  }
+
+
+  /* ---------- Estilos Galería ---------- */
+
+
+  .galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 200px;
+  }
+
+  /* ---------- Estilos Plantilla ---------- */
+
+  .plantilla-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px 0 15px;
+  }
+
+  .text-grid {
+    display: block;
+    margin-bottom: 10px;
+
+    h2 {
+      text-align: center;
+      text-decoration: underline;
+      margin-bottom: 10px;
+    }
+  }
+
+
+
+  .img-grid {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+
+  .text-grid-2 {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .text-grid-2 p:first-child {
+    padding-bottom: 50px;
+  }
+
+
+  .plantilla-container table {
+    margin: 0%;
+
+  }
+
+
+  .players-loan-info {
+    display: grid;
+    grid-template-areas:
+      "top-l top-r"
+      "bottom-l bottom-r";
+    gap: 15px;
+  }
+
+
+  .item-1 {
+    grid-area: top-l;
+
+  }
+
+  .item-2 {
+    grid-area: top-r;
+  }
+
+  .item-3 {
+    grid-area: bottom-l;
+  }
+
+  .item-4 {
+    grid-area: bottom-r;
+  }
+
+  .players-loan-info div {
+    padding: 0;
+    margin: 0;
+    justify-content: start;
+  }
+
+
+  .plantilla-container {
+    padding-top: 20px;
+  }
+
+
+  .plantilla-container table {
+    margin: auto;
+    background-color: black;
+
+  }
+
+
+  /* ---------- Estilos Contacto ---------- */
+
+
+  .contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+}
+
+/* -------------------------- Media Query Desktop --------------------------- */
+
+
+@media screen and (min-width:1400px) {
+
+  /* ---------- Estilos Generales ---------- */
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img {
+      display: block;
+      width: 115px;
+      height: 115px;
+    }
+
+    h1 {
+      font-size: 45px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+    }
+
+    li a {
+      font-size: 25px;
+      padding: 10px;
+    }
+  }
+
+
+  .main-text h2 {
+    font-size: 55px;
+  }
+
+  /* ---------- Estilos Inicio ---------- */
+
+  .news-container {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+
+    div {
+      border: 5px solid rgb(128, 128, 128);
+      width: 500px;
+      height: 300px;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      box-shadow: 10px 10px 5px 3px rgba(97, 96, 96, 0.75);
+      -webkit-box-shadow: 10px 10px 5px 3px rgba(97, 96, 96, 0.75);
+      -moz-box-shadow: 10px 10px 5px 3px rgba(97, 96, 96, 0.75);
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+      }
+
+      h3 {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        margin: 0;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.495);
+
+      }
+    }
+  }
+
+
+
+  /* ---------- Estilos Galería ---------- */
+
+
+  .galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 500px;
+  }
+
+  .grid-container h3 {
+    font-size: 35px;
+  }
+
+  /* ---------- Estilos Partidos ---------- */
+
+  .match-plan-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    h2 {
+      align-self: center;
+      background: none;
+    }
+  }
+
+  /* ---------- Estilos Plantilla ---------- */
+
+
+
+
+  .plantilla-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "text-grid text-grid table-grid"
+      "img-grid text-grid-2 text-grid-2";
+    gap: 15px;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .text-grid {
+    grid-area: text-grid;
+  }
+
+  .img-grid {
+    grid-area: img-grid;
+
+  }
+
+  .text-grid-2 {
+    height: 100%;
+    padding: 20px;
+    grid-area: text-grid-2;
+  }
+
+  .table-grid {
+
+    grid-area: table-grid;
+    align-self: flex-start;
+  }
+
+
+  .players-loan-info {
+    display: grid;
+    grid-template-areas:
+      "top-l top-r"
+      "bottom-l bottom-r";
+    gap: 15px;
+  }
+
+
+  .item-1 {
+    grid-area: top-l;
+
+  }
+
+  .item-2 {
+    grid-area: top-r;
+  }
+
+  .item-3 {
+    grid-area: bottom-l;
+  }
+
+  .item-4 {
+    grid-area: bottom-r;
+  }
+
+  .players-loan-info div {
+    padding: 0;
+    margin: 0;
+    justify-content: start;
+  }
+
+
+  /* ---------- Estilos Contacto ---------- */
+
+  .main-container {
+    margin: auto;
+  }
+
+
+
+
+  .contact-wrapper {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 250px 450px;
+    grid-template-rows: 500px;
+    grid-template-areas:
+      "left left right";
+
+  }
+
+  .contact-form {
+    font-size: 25px;
+    grid-area: left;
+    height: 100%;
+
+  }
+
+  .contact-info {
+    grid-area: right;
+    background-color: rgb(14, 14, 14);
+    font-size: 25px;
+    height: 100%;
+  }
+
+
+  .contact-info h3,
+  .contact-info ul,
+  .contact-info p {
+    padding: 10px;
+  }
+}
