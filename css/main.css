@@ -1,4 +1,26 @@
 @charset "UTF-8";
+.social-twitter {
+  color: #0077ff; }
+
+.social-instagram {
+  color: #ff3700; }
+
+.social-mail {
+  color: yellow; }
+
+.boton, .boton-primario, .boton-secundario {
+  font-size: 1.5em;
+  border: solid 1px;
+  padding: 2px; }
+
+.boton-primario {
+  background-color: white;
+  color: red; }
+
+.boton-secundario {
+  background-color: blue;
+  color: white; }
+
 * {
   padding: 0;
   margin: 0;
